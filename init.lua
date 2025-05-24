@@ -602,6 +602,9 @@ require('lazy').setup({
       --   vim.diagnostic.config { signs = { text = diagnostic_signs } }
       -- end
 
+      -- Disable diagnostics (in liu of a diagnostics plugin)
+      vim.diagnostic.config { virtual_text = false }
+
       -- LSP servers and clients are able to communicate to each other what features they support.
       --  By default, Neovim doesn't support everything that is in the LSP specification.
       --  When you add nvim-cmp, luasnip, etc. Neovim now has *more* capabilities.
